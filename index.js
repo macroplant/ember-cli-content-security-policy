@@ -113,9 +113,9 @@ module.exports = {
 
       // the local server will never run for production builds, so no danger in adding the nonce all the time
       // even so it's only needed if tests are executed by opening `http://localhost:4200/tests`
-      if (policyObject) {
-        appendSourceList(policyObject, 'script-src', "'nonce-" + STATIC_TEST_NONCE + "'");
-      }
+      // if (policyObject) {
+      //   appendSourceList(policyObject, 'script-src', "'nonce-" + STATIC_TEST_NONCE + "'");
+      // }
 
       // can be moved to the ember-cli-live-reload addon if RFC-22 is implemented
       // https://github.com/ember-cli/rfcs/pull/22
